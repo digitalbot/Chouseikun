@@ -1,2 +1,5 @@
 require "./app"
-run Chouseikun::App
+require "./dev"
+
+map('/') { run App }
+map('/dev') { run Dev }
