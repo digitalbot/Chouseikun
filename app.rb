@@ -8,5 +8,3 @@ class App < Sinatra::Base
          erb :event
     end
 end
-
-	
