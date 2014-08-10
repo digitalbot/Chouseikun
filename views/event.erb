@@ -1,1 +1,26 @@
-<p>hoge</p>
+<h1>候補の期間を入力してください</h1>
+
+<div>
+<form action="/result" method="post">
+  <select name="from">
+    <% @from_day.each do |f| %>
+    <option value="<%= f %>"><%= f %></option>
+    <% end %>
+  </select>
+  〜
+  <select name="to">
+    <% @to_day.each do |t| %>
+    <option value="<%= t %>"><%= t %></option>
+    <% end %>
+  </select>
+
+  <br />
+
+  <textarea name="description" cols=50 rows=5>
+  </textarea>
+
+  <br />
+
+  <input type=submit value="OK">
+</form>
+</div>
