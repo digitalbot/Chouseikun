@@ -3,8 +3,13 @@ require "sinatra/base"
 module Chouseikun
     class App < Sinatra::Base
         get '/' do
-            'hello'
+
+          erb :index
         end
+	get '/event' do
+          erb :event
+        end
+
     end
 end
 
